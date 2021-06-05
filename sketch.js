@@ -1,7 +1,7 @@
-const Engine = Matter.Engine,
-const World = Matter.World,
-const Events = Matter.Events,
-const Bodies = Matter.Bodies;
+const Engine = Matter.Engine
+const World = Matter.World
+const Events = Matter.Events
+const Bodies = Matter.Bodies
  
 var particles = [];
 var plinkos = [];
@@ -46,7 +46,7 @@ function setup() {
 
   //create particle objects
   if(frameCount%60===0){
-    particles.push(new particle(random(width/2-10, width/2+10, 10,10)))
+    particles.push(new particle(random(width/2-10), width/2+10, 10,10))
   }
     
 }
